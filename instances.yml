@@ -1,0 +1,39 @@
+---
+myapp2.router:
+  advertise_uri: localhost:3301
+  http_port: 8098
+
+myapp2.s1-master:
+  advertise_uri: localhost:3302
+  http_enabled: false
+  memtx_memory: 134217728
+
+
+myapp2.s1-replica1:
+  advertise_uri: localhost:3303
+  http_enabled: false
+  memtx_memory: 134217728
+
+myapp2.s1-replica2:
+  advertise_uri: localhost:3309
+  http_enabled: false
+  memtx_memory: 134217728
+
+myapp2.s2-master:
+  advertise_uri: localhost:3304
+  http_enabled: false
+  memtx_memory: 134217728
+
+myapp2.s2-replica1:
+  advertise_uri: localhost:3305
+  http_enabled: false
+  memtx_memory: 134217728
+
+myapp2.s2-replica2:
+  advertise_uri: localhost:3306
+  http_enabled: false
+  memtx_memory: 134217728
+
+myapp2-stateboard:
+  listen: localhost:4401
+  password: passwd
